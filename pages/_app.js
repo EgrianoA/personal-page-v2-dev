@@ -1,17 +1,27 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head';
+import { Layout } from 'antd'
 import '../style/main.scss'
+import Antd from '../style/antd';
+import ReactSlick from '../style/react-slick'
+import ReactSlickTheme from '../style/react-slick-theme'
 
 const _app = props => {
+    const assetPrefix = process.env.ASSET_PREFIX
     const { Component, pageProps } = props;
 
     return (
         <div>
             <Head>
-                <title>Egriano's Personal Page</title>
-                <link rel="icon" href="/assets/think.png" />
+                <title>EgrianoA's Experiment Page</title>
+                <link rel="icon" href={`${assetPrefix}/assets/think.png`} />
             </Head>
-            <Component {...pageProps} />
+            <Antd/>
+            <ReactSlick/>
+            <ReactSlickTheme/>
+            <Layout>
+                <Component {...pageProps} />
+            </Layout>
         </div>
     )
 }

@@ -10,10 +10,19 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "antd": "^4.6.2",
+    "bootstrap": "^4.5.0",
     "next": "9.4.4",
     "node-sass": "^4.14.1",
     "react": "16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "16.13.1",
-    "sass": "^1.26.9"
+    "react-parallax": "^3.0.3",
+    "react-reveal": "^1.2.2",
+    "react-scroll-parallax": "^2.3.3",
+    "react-slick": "^0.27.10",
+    "sass": "^1.26.9",
+    "slick-carousel": "^1.8.1",
+    "webpack": "^4.43.0"
   }
 }
