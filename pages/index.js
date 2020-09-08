@@ -21,7 +21,6 @@ export default function Home() {
 
   return (
     <div className="homepage">
-      {/* <img src={`${assetPrefix}/bg/Section-1.svg`} className="background" /> */}
       <div className="background">
         {/* <img src={`${assetPrefix}/bg/Section-1.svg`}/> */}
         {/* <Row className='section1'>
@@ -113,22 +112,22 @@ export default function Home() {
         </center>
       </Row> */}
         <ParallaxProvider>
+          {/* <img src={`${assetPrefix}/bg/Section-1.svg`} className="background" /> */}
           <Row className="parallax-1">
             <center>
-
               <Jump spy={jump}>
                 <Slide right cascade>
                   <h1 className='hi'>Hi!</h1>
                 </Slide>
               </Jump>
 
-              <Parallax y={[0, 250]} >
+              <Parallax y={["0px", "125px"]} >
                 <p>SCROLL</p>
               </Parallax>
-              <Parallax y={[-25, 10]} >
+              <Parallax y={["0px", "50px"]} >
                 <img src={`${assetPrefix}/assets/Polygon 2.svg`} className="arrow-1" />
               </Parallax>
-              <Parallax y={[-50, 20]} >
+              <Parallax y={["-25px", "75px"]} >
                 <img src={`${assetPrefix}/assets/Polygon 3.svg`} className="arrow-2" />
               </Parallax>
             </center>
