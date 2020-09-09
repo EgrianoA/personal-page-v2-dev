@@ -22,98 +22,8 @@ export default function Home() {
   return (
     <div className="homepage">
       <div className="background">
-        {/* <img src={`${assetPrefix}/bg/Section-1.svg`}/> */}
-        {/* <Row className='section1'>
-        <Parallax
-          bgImage={`${assetPrefix}/bg/Section-1.png`}
-          blur={{ min: -5, max: 15 }}
-          strength={1000}
-        >
-          <center style={{ minHeight: '100vh' }}>
-            <h1>SECTION 1</h1>
-          </center>
-        </Parallax>
-        <center>
-          <img src={`${assetPrefix}/bg/Subtraction 1.svg`}></img>
-          <h1>SECTION 1</h1>
-        </center>
-      </Row>
-      <Row className='section2'>
-        <center>
-          <h1>SECTION 2</h1>
-          <Row gutter={16}>
-            <Col span={12}>
-              <div className="section2Card">
-                <p>TEST 1</p>
-              </div>
-            </Col>
-            <Col span={12}>
-              <div className="section2Card">
-                <p>TEST 2</p>
-              </div>
-            </Col>
-          </Row>
-        </center>
-      </Row>
-      <Row className='section3'>
-        <center>
-          <h1>SECTION 3</h1>
-          <Row>
-            <Slider
-              dots={true}
-              infinite={true}
-              speed={500}
-              slidesToShow={1}
-              slidesToScroll={1}
-              className="slider">
-              <div>
-                <Row gutter={16}>
-                  <Col span={12}>
-                    <div className="sliderText">
-                      <h1>LEFT SECTION</h1>
-                    </div>
-                  </Col>
-                  <Col span={12}>
-                    <div className="imageSection" style={{ backgroundColor: 'aquamarine' }} />
-                  </Col>
-                </Row>
-              </div>
-              <div>
-                <Row gutter={16}>
-                  <Col span={12}>
-                    <div className="sliderText">
-                      <h1>LEFT SECTION 2</h1>
-                    </div>
-                  </Col>
-                  <Col span={12}>
-                    <div className="imageSection" style={{ backgroundColor: 'aqua' }} />
-                  </Col>
-                </Row>
-              </div>
-              <div>
-                <Row gutter={16}>
-                  <Col span={12}>
-                    <div className="sliderText">
-                      <h1>LEFT SECTION 3</h1>
-                    </div>
-                  </Col>
-                  <Col span={12}>
-                    <div className="imageSection" style={{ backgroundColor: 'bisque' }} />
-                  </Col>
-                </Row>
-              </div>
-            </Slider>
-          </Row>
-        </center>
-      </Row>
-      <Row className='section4'>
-        <center>
-          <h1>SECTION 4</h1>
-        </center>
-      </Row> */}
         <ParallaxProvider>
-          {/* <img src={`${assetPrefix}/bg/Section-1.svg`} className="background" /> */}
-          <Row className="parallax-1">
+          <Row className="section1">
             <center>
               <Jump spy={jump}>
                 <Slide right cascade>
@@ -133,18 +43,18 @@ export default function Home() {
             </center>
           </Row>
           <Row>
-            <div className="parallax-2">
+            <div className="section2">
 
               <h1>
                 <Fade cascade>
                   Lorem ipsum dolor sit amet
                 </Fade>
               </h1>
-              <h2>
+              <h4>
                 <Fade cascade>
                   consectetur adipiscing elit
               </Fade>
-              </h2>
+              </h4>
 
               <Row>
                 <Slide right cascade>
@@ -158,23 +68,37 @@ export default function Home() {
               </Row>
             </div>
           </Row>
-          <Row className='parallax-3'>
+          <Row className='section3'>
             <center>
               <Parallax y={[50, -50]} >
-                <h1 className='gradientText'>SECTION 2</h1>
+                <h2 className='gradientText'>SECTION 3</h2>
               </Parallax>
               <Row gutter={16}>
                 <Col span={12}>
                   <Parallax y={[150, -150]} >
-                    <div className="parallax-3Card">
-                      <p>TEST 1</p>
+                    <div className="section3Card">
+                      <div className="section3Icon">
+                      </div>
+                      <h4 className="section3Title">TEST 1</h4>
+                      <p className="section3Desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                      <a><button className="section3Button"></button></a>
                     </div>
                   </Parallax>
                 </Col>
                 <Col span={12}>
                   <Parallax y={[250, -250]} >
-                    <div className="parallax-3Card">
-                      <p>TEST 2</p>
+                    <div className="section3Card">
+                      <div className="section3Icon">
+                      </div>
+                      <h4 className="section3Title">TEST 2</h4>
+                      <p className="section3Desc">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                      <a><button className="section3Button"></button></a>
                     </div>
                   </Parallax>
                 </Col>
@@ -182,9 +106,9 @@ export default function Home() {
             </center>
           </Row>
           <Row>
-            <div className='section3'>
+            <div className='section4'>
               <center>
-                <h1>SECTION 3</h1>
+                <h3>SECTION 4</h3>
                 <Row>
                   <Slider
                     dots={true}
@@ -198,7 +122,15 @@ export default function Home() {
                       <Row gutter={16}>
                         <Col span={12}>
                           <div className="sliderText">
-                            <h1>LEFT SECTION</h1>
+                            <p>2020</p>
+                            <h4>LEFT SECTION</h4>
+                            <span>
+                              <p className="desc">
+                                t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p><a>Detail</a></span>
                           </div>
                         </Col>
                         <Col span={12}>
@@ -210,7 +142,15 @@ export default function Home() {
                       <Row gutter={16}>
                         <Col span={12}>
                           <div className="sliderText">
-                            <h1>LEFT SECTION 2</h1>
+                            <p>2020</p>
+                            <h4>LEFT SECTION 2</h4>
+                            <span>
+                              <p className="desc">
+                                t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p><a>Detail</a></span>
                           </div>
                         </Col>
                         <Col span={12}>
@@ -222,7 +162,15 @@ export default function Home() {
                       <Row gutter={16}>
                         <Col span={12}>
                           <div className="sliderText">
-                            <h1>LEFT SECTION 3</h1>
+                            <p>2020</p>
+                            <h4>LEFT SECTION 3</h4>
+                            <span>
+                              <p className="desc">
+                                t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                            </p><a>Detail</a></span>
                           </div>
                         </Col>
                         <Col span={12}>
@@ -235,9 +183,18 @@ export default function Home() {
               </center>
             </div>
           </Row>
-          <Row className='section4'>
+          <Row className='section5'>
             <center>
-              <h1>SECTION 4</h1>
+              <h1>SECTION 5</h1>
+              <h3>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h3>
+              <a><button className="section5Button"></button></a>
+              <h3>totam rem aperiam, eaque ipsa quae ab</h3>
+              <div className="icons">
+                <div className='round' />
+                <div className='round' />
+                <div className='round' />
+                <div className='round' />
+              </div>
             </center>
           </Row>
         </ParallaxProvider>
