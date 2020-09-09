@@ -102,37 +102,45 @@ html, body{
 
 .section3{
   min-height:100vh;
-  .section3Card{
-    background-color:white;
-    min-height:50vh;
-    border:1.5px solid #4492F7;
-    border-radius: 50px;
-    margin: 10vh 15vh 0vh 15vh;
-    color:#4492F7;
-    .section3Icon{
-      min-height:8vw;
-      max-height:8vw;
-      max-width:8vw;
-      margin-top:3vh;
-      margin-bottom:15px;
-      background-color:#4492F7;
-    }
-    .section3Title{
+  margin-bottom:10vh;
+  .section3web{
+    display:block;
+    .section3Card{
+      background-color:white;
+      min-height:50vh;
+      border:1.5px solid #4492F7;
+      border-radius: 50px;
+      margin: 5vh 5vw 10vh 5vw;
       color:#4492F7;
+      .section3Icon{
+        min-height:8vw;
+        max-height:8vw;
+        max-width:8vw;
+        margin-top:3vh;
+        margin-bottom:15px;
+        background-color:#4492F7;
+      }
+      .section3Title{
+        color:#4492F7;
+      }
+      .section3Desc{
+        color:#4492F7;
+        margin-left:5vw;
+        margin-right: 5vw;
+      }
+      .section3Button{
+        margin-top:5vh;
+        margin-bottom:10vh;
+        height:3vw;
+        width:12vw;
+        background-color:#4492F7;
+        border:0px;
+        border-radius:25px;
+      }
     }
-    .section3Desc{
-      color:#4492F7;
-      margin-left:5vw;
-      margin-right: 5vw;
-    }
-    .section3Button{
-      margin-top:5vh;
-      height:3vw;
-      width:12vw;
-      background-color:#4492F7;
-      border:0px;
-      border-radius:25px;
-    }
+  }
+  .section3mobile{
+    display: none;
   }
   .gradientText{
     background: linear-gradient(45deg, rgba(198,255,221,1) 0%, rgba(251,215,134,1) 50%, rgba(247,121,125,1) 100%);
@@ -144,6 +152,7 @@ html, body{
 
 
   .section4{
+    display:block;
     min-height:75vh;
     background-color: white;
     border-radius: 20px;
@@ -153,10 +162,11 @@ html, body{
     h3{
       color:#4492F7;
     }
-    .slider{
+    .slider-web{
       margin-left:5vw;
       margin-right:5vw;
       margin-top:10vh;
+      margin-bottom:15vh;
       .slick-prev::before{
         color: #1890ff
       }
@@ -169,28 +179,30 @@ html, body{
           color: #1890ff
         }
       }
-
+      .sliderText{
+        text-align: left;
+        margin-left:100px;
+        p{
+          color:#4492F7;
+        }
+        h4{
+          margin-top:-10px;
+          color:#4492F7;
+        }
+        .desc{
+          font-weight:400;
+          color:black;
+        }
+      }
+      .imageSection{
+        height: 18vw;
+        width : 32vw;
+        max-width: 800px;
+        max-height: 600px;
+      }
     }
-    .sliderText{
-      text-align: left;
-      margin-left:100px;
-      p{
-        color:#4492F7;
-      }
-      h4{
-        margin-top:-10px;
-        color:#4492F7;
-      }
-      .desc{
-        font-weight:400;
-        color:black;
-      }
-    }
-    .imageSection{
-      height: 18vw;
-      width : 32vw;
-      max-width: 800px;
-      max-height: 600px;
+    .slider-mobile{
+      display: none;
     }
   }
 
@@ -220,6 +232,163 @@ html, body{
       }
     }  
   }
+
+  ////////////////////////////upto 768p screen
+//////////////////////////
+//////////////////////
+//////////////////
+//////////////
+//////////
+//////
+///
+
+@media only screen and (max-width: 1366px){
+  .section1{
+    .scroll{
+      p{
+        top:15vh;
+      }
+      .arrow-1{
+        top:20vh;
+      }
+      .arrow-2{
+        top:5vh;
+      }
+    }
+  }
+}
+
+////////////////////////////IPAD PRO PORTRAIT
+//////////////////////////
+//////////////////////
+//////////////////
+//////////////
+//////////
+//////
+///
+@media only screen and (max-width: 1024px){
+  .section1{
+    .scroll{
+      p{
+        top:25vh;
+      }
+      .arrow-1{
+        top:30vh;
+      }
+      .arrow-2{
+        top:20vh;
+      }
+    }
+  }
+  .section2{
+    h4{
+      margin-top:-3vh;
+    }
+  }
+  .section3{
+    .section3Card{
+      min-height:40vh;
+    }
+  }
+}
+
+////////////////////////////IPAD PORTRAIT
+//////////////////////////
+//////////////////////
+//////////////////
+//////////////
+//////////
+//////
+///
+@media only screen and (max-width: 768px) {
+  .section3{
+    .section3web{
+      display:none
+    }
+    .section3mobile{
+      display:block;
+      .section3Card{
+        background-color:white;
+        min-height:50vh;
+        border:1.5px solid #4492F7;
+        border-radius: 50px;
+        margin: 5vh 10vw 5vh 10vw;
+        color:#4492F7;
+        .section3Icon{
+          min-height:15vw;
+          max-height:15vw;
+          max-width:15vw;
+          margin-top:5vh;
+          margin-bottom:15px;
+          background-color:#4492F7;
+        }
+        .section3Title{
+          color:#4492F7;
+        }
+        .section3Desc{
+          color:#4492F7;
+          margin-left:5vw;
+          margin-right: 5vw;
+        }
+        .section3Button{
+          margin-top:5vh;
+          margin-bottom:5vh;
+          height:7vw;
+          width:28vw;
+          background-color:#4492F7;
+          border:0px;
+          border-radius:25px;
+        }
+      }
+    }
+  }
+  .section4{
+    padding-top:5vh;
+    .slider-web{
+      display:none
+    }
+    .slider-mobile{
+      display:block;
+      margin-left:5vw;
+      margin-right:5vw;
+      margin-top:5vh;
+      margin-bottom:15vh;
+      .slick-prev::before{
+        color: #1890ff
+      }
+      .slick-next::before{
+        color: #1890ff
+      }
+      .slick-dots{
+        bottom:-50px;
+        li.slick-active button:before{
+          color: #1890ff
+        }
+      }
+      .sliderText{
+        text-align: center;
+        p{
+          color:#4492F7;
+        }
+        h4{
+          margin-top:-10px;
+          color:#4492F7;
+        }
+        .desc{
+          font-weight:400;
+          color:black;
+        }
+      }
+      .imageSection{
+        height: 36vw;
+        width : 64vw;
+        max-width: 800px;
+        max-height: 600px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
 
 
 
