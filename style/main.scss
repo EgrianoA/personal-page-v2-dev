@@ -296,33 +296,55 @@ html, body{
         min-height:50vh;
         border:1.5px solid #4492F7;
         border-radius: 50px;
-        margin: 0vh 10vw 5vh 10vw;
+        margin: 0vh 5vw 0vh 5vw;
         color:#4492F7;
-        .section3Icon{
-          min-height:15vw;
-          max-height:15vw;
-          max-width:15vw;
-          margin-top:5vh;
-          margin-bottom:15px;
-          background-color:#4492F7;
-        }
-        .section3Title{
-          color:#4492F7;
-        }
-        .section3Desc{
-          color:#4492F7;
-          margin-left:5vw;
-          margin-right: 5vw;
-        }
-        .section3Button{
-          margin-top:5vh;
-          margin-bottom:5vh;
-          height:7vw;
-          width:28vw;
-          background-color:#4492F7;
-          border:0px;
-          border-radius:25px;
-        }
+        .slider-mobile{
+          .section3Icon{
+            min-height:15vw;
+            max-height:15vw;
+            max-width:15vw;
+            margin-top:5vh;
+            margin-bottom:15px;
+            background-color:#4492F7;
+          }
+          .section3Title{
+            color:#4492F7;
+          }
+          .section3Desc{
+            color:#4492F7;
+            margin-left:10vw;
+            margin-right: 10vw;
+          }
+          .section3Button{
+            margin-top:5vh;
+            margin-bottom:5vh;
+            height:7vw;
+            width:28vw;
+            background-color:#4492F7;
+            border:0px;
+            border-radius:25px;
+          }
+          .slick-prev{
+            left:3vw;
+            top:25vh;
+          }
+          .slick-prev::before{
+            color: #1890ff;
+          }
+          .slick-next{
+            right:3vw;
+            top:25vh;
+          }
+          .slick-next::before{
+            color: #1890ff
+          }
+          .slick-dots{
+            bottom:-50px;
+            li.slick-active button:before{
+              color: #1890ff
+            }
+          }        
+        }      
       }
     }
   }
@@ -410,7 +432,7 @@ html, body{
 
     .section3{
       .section3mobile{
-        margin: 5vh 5vw 5vh 5vw;
+        margin: 0vh 5vw 5vh 5vw;
       }
     }
 }
@@ -459,22 +481,38 @@ html, body{
 
   .section3{
     .section3mobile{
-      margin: 5vh 0vw 5vh 0vw;
+      margin: -5vh 0vw 5vh 0vw;
       .section3Card{
         border-radius:25px;
-        margin: 0 5vw 5vh 5vw;
-        .section3Icon{
-          min-height:25vw;
-          max-height:25vw;
-          max-width: 25vw;
+        margin: -10vh 5vw 5vh 5vw;
+        .slider-mobile{
+          .section3Icon{
+            min-height:25vw;
+            max-height:25vw;
+            max-width: 25vw;
+          }
+          .section3Desc{
+            font-size: 15px;
+          }
+          .section3Button{
+            height:14vw;
+            width: 48vw;
+          }
+          .slick-prev{
+            top:30vh;
+          }
+          .slick-next{
+            top:30vh;
+          }
+          .slick-dots{
+            bottom:-50px;
+            li button::before{
+              opacity:1;
+              color: white
+            }
+          } 
         }
-        .section3Desc{
-          font-size: 15px;
-        }
-        .section3Button{
-          height:14vw;
-          width: 48vw;
-        }
+       
       }
     }
   }

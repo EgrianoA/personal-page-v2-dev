@@ -143,7 +143,6 @@ export default function Home() {
           </Row>
           <Row className='section5'>
             <center>
-              <h1>SECTION 5</h1>
               <h4>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h4>
               <a><button className="section5Button"></button></a>
               <h4>totam rem aperiam, eaque ipsa quae ab</h4>
