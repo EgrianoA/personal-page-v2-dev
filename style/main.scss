@@ -451,21 +451,21 @@ html, body{
 ///
 @media only screen and (max-width: 576px) {
   .section1{
-    top:50vh;
+    top:45vh;
     .hi{
       font-size: 40px;
     }
     .scroll{
       p{
-        top:5vw;
+        top:15vw;
         font-size:15px;
       }
       .arrow-1{
-        top:25vw;
+        top:35vw;
         transform:scale(0.4)
       }
       .arrow-2{
-        top:-5vw;
+        top:5vw;
         transform:scale(0.4)
       }
     } 
