@@ -5,7 +5,7 @@ const section3mobile = (props) => {
     return (
         <Col span={24}>
             <div className="section3mobile">
-                <Parallax y={["300px", "-150px"]} >
+                <Parallax y={["175px", "50px"]} >
                     <div className="section3Card">
                         <Slider
                             dots={true}

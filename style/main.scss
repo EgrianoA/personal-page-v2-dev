@@ -7,6 +7,7 @@ html, body{
 
 
 .homepage {
+    overflow-x:hidden;
     font-family: 'Lato', sans-serif;
     background: linear-gradient(180deg, rgba(40,169,241,1) 0%, rgba(21,6,61,1) 100%);
     min-height: 300vh;
@@ -38,7 +39,7 @@ html, body{
   }
 
   .background{
-    background-image: url('/bg/All.svg');
+    // background-image: url('/bg/All.svg');
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
@@ -47,17 +48,17 @@ html, body{
 .section1{
   min-height:100vh;
   position: absolute;
-  top: 45vh;
+  top: 35vh;
   p{
     font-size: 20px;
     font-weight:400;
     text-align: center;
     position: relative;
-    top: 25vh;
+    top: 20vh;
   }
   .arrow-1{
     position: relative;
-    top: 30vh;
+    top: 25vh;
     transform:scale(0.5);
     animation-name: bounce;
     animation-duration: 1s;
@@ -65,7 +66,7 @@ html, body{
   }
   .arrow-2{
     position: relative;
-    top: 18vh;
+    top: 13vh;
     transform:scale(0.5);
     animation-name: bounce;
     animation-duration: 1s;
@@ -244,6 +245,7 @@ html, body{
 
 @media only screen and (max-width: 1366px){
   .section1{
+    top: 30vh;
     .scroll{
       p{
         top:15vh;
@@ -268,6 +270,7 @@ html, body{
 ///
 @media only screen and (max-width: 1024px){
   .section1{
+    top:45vh;
     .scroll{
       p{
         top:25vh;
@@ -431,8 +434,9 @@ html, body{
     }
 
     .section3{
+      min-height:75vh;
       .section3mobile{
-        margin: 0vh 5vw 5vh 5vw;
+        margin: -10vh 5vw 5vh 5vw;
       }
     }
 }
@@ -447,28 +451,28 @@ html, body{
 ///
 @media only screen and (max-width: 576px) {
   .section1{
-    top:45vh;
+    top:50vh;
     .hi{
       font-size: 40px;
     }
     .scroll{
       p{
-        top:5vh;
+        top:5vw;
         font-size:15px;
       }
       .arrow-1{
-        top:10vh;
+        top:25vw;
         transform:scale(0.4)
       }
       .arrow-2{
-        top:-8vh;
+        top:-5vw;
         transform:scale(0.4)
       }
     } 
   }
 
   .section2{
-    margin-top:70vh;
+    margin-top:65vw;
     h1{
       font-size:30px;
     }
@@ -480,11 +484,14 @@ html, body{
   }
 
   .section3{
+    h2{
+      font-size:30px;
+    }
     .section3mobile{
       margin: -5vh 0vw 5vh 0vw;
       .section3Card{
-        border-radius:25px;
-        margin: -10vh 5vw 5vh 5vw;
+        border-radius:20px;
+        margin: -100px 5vw 5vh 5vw;
         .slider-mobile{
           .section3Icon{
             min-height:25vw;
@@ -519,14 +526,15 @@ html, body{
   .section4{
     margin-left: 5vw;
     margin-right: 5vw;
+    border-radius: 15px;
     .slider-mobile{
       .slick-prev{
         left:-5vw;
-        top:50vh;
+        top:250px;
       }
       .slick-next{
         right: -5vw;
-        top:50vh;
+        top:250px;
       }
       .sliderText{
         p{

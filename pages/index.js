@@ -71,7 +71,7 @@ export default function Home() {
 
   return (
     <div className="homepage">
-      <div className="background">
+      <div className="background" style={{backgroundImage:`url(${assetPrefix}/bg/All.svg)`}}>
         <ParallaxProvider>
           <Row className="section1">
             <center>
