@@ -6,10 +6,10 @@ import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 import Jump from 'react-reveal/Jump'
-import Section4web from '../component/section-4-web'
-import Section4mobile from '../component/section-4-mobile'
 import Section3web from '../component/section-3-web'
 import Section3mobile from '../component/section-3-mobile'
+import Section4web from '../component/section-4-web'
+import Section4mobile from '../component/section-4-mobile'
 
 
 export default function Home() {
@@ -22,22 +22,28 @@ export default function Home() {
 
   const section3Content = [
     {
-      img: "",
-      title: "TEST 1",
+      img: "Icon metro-stack.svg",
+      // title: "Fullstack Developer",
+      title: "TEST1",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "",
-      buttonLogo: "",
-      parallaxConfig : {
+      url: "https://github.com/EgrianoA",
+      buttonLogo: "Icon awesome-github.svg",
+      // buttonText: "EgrianoA",
+      buttonText: "TEST1",
+      parallaxConfig: {
         y: [150, -150]
       }
     },
     {
-      img: "",
-      title: "TEST 2",
+      img: "Group 315.svg",
+      // title: "Designer",
+      title: "TEST2",
       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "",
-      buttonLogo: "",
-      parallaxConfig : {
+      url: "https://dribbble.com/ArisatouGri",
+      buttonLogo: "Icon awesome-dribbble.svg",
+      // buttonText: "ArisatouGri",
+      buttonText: "TEST2",
+      parallaxConfig: {
         y: [250, -250]
       }
     }
@@ -67,11 +73,15 @@ export default function Home() {
     },
   ]
 
+  const redirect = (url) => {
+    window.open(url)
+  }
+
 
 
   return (
     <div className="homepage">
-      <div className="background" style={{backgroundImage:`url(${assetPrefix}/bg/All.svg)`}}>
+      <div className="background" style={{ backgroundImage: `url(${assetPrefix}/bg/All.svg)` }}>
         <ParallaxProvider>
           <Row className="section1">
             <center>
@@ -97,11 +107,17 @@ export default function Home() {
             <div className="section2">
 
               <h1>
+                {/* <Fade cascade>
+                 I'm Egriano Aristianto
+                </Fade> */}
                 <Fade cascade>
                   Lorem ipsum dolor sit amet
                 </Fade>
               </h1>
               <h4>
+                {/* <Fade cascade>
+                  A Fullstack Developer (+ A Designer)
+              </Fade> */}
                 <Fade cascade>
                   consectetur adipiscing elit
               </Fade>
@@ -110,10 +126,21 @@ export default function Home() {
               <Row>
                 <Slide right cascade>
                   <div className="icons">
-                    <div className='round' />
-                    <div className='round' />
-                    <div className='round' />
-                    <div className='round' />
+                    <div className='round'>
+                      <a onClick={() => redirect("https://www.linkedin.com/in/egrianoaristianto/")}>
+                        <img src={`${assetPrefix}/assets/Icon awesome-linkedin.svg`} />
+                      </a>
+                    </div>
+                    <div className='round'>
+                      <a onClick={() => redirect("https://github.com/EgrianoA")}>
+                        <img src={`${assetPrefix}/assets/Icon awesome-github.svg`} />
+                      </a>
+                    </div>
+                    <div className='round'>
+                      <a onClick={() => redirect("https://dribbble.com/ArisatouGri")}>
+                        <img src={`${assetPrefix}/assets/Icon awesome-dribbble.svg`} />
+                      </a>
+                    </div>
                   </div>
                 </Slide>
               </Row>
@@ -122,11 +149,11 @@ export default function Home() {
           <Row className='section3'>
             <center>
               <Parallax y={[50, -50]} >
-                <h2 className='gradientText'>SECTION 3</h2>
+                <h2 className='gradientText'>What I do</h2>
               </Parallax>
               <Row gutter={16}>
                 <Section3web content={section3Content} />
-                <Section3mobile content={section3Content}/>
+                <Section3mobile content={section3Content} />
               </Row>
             </center>
           </Row>
@@ -141,18 +168,36 @@ export default function Home() {
               </center>
             </div>
           </Row>
-          <Row className='section5'>
-            <center>
-              <h4>ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</h4>
-              <a><button className="section5Button"></button></a>
-              <h4>totam rem aperiam, eaque ipsa quae ab</h4>
-              <div className="icons">
-                <div className='round' />
-                <div className='round' />
-                <div className='round' />
-                <div className='round' />
-              </div>
-            </center>
+          <Row >
+            <div className='section5'>
+              <center>
+                <h4>Thank you for visiting my site!</h4>
+                {/* <a><button className="section5Button"></button></a> */}
+                <p>For detailed information about me and my works you can contact me through</p>
+                <div className="icons">
+                  <Row>
+                    <div className="contactInfo">
+                      <div className="email">
+                        <Col xs={24}>
+                          <img src={`${assetPrefix}/assets/Icon material-email.svg`} />
+                        </Col>
+                        <span>EgrianoA@gmail.com</span>
+                      </div>
+                      <div className="linkedin">
+                        <Col xs={24}>
+                          <img src={`${assetPrefix}/assets/Icon awesome-linkedin.svg`} />
+                        </Col>
+                        <a href={"https://www.linkedin.com/in/egrianoaristianto/"}>https://www.linkedin.com/in/egrianoaristianto/</a>
+                      </div>
+                    </div>
+                  </Row>
+                </div>
+                <div className="finalWord">
+                  <p>Designed and coded with love by Egriano Aristianto</p>
+                  <p>2020 - All right reserved</p>
+                </div>
+              </center>
+            </div>
           </Row>
         </ParallaxProvider>
       </div>

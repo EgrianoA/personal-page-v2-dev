@@ -48,7 +48,7 @@ html, body{
 .section1{
   min-height:100vh;
   position: absolute;
-  top: 35vh;
+  top: 38vh;
   p{
     font-size: 20px;
     font-weight:400;
@@ -83,7 +83,7 @@ html, body{
   min-height: 75vh;
   margin-top:40vh;
   margin-left:10vw;
-  margin-right:10vw;  
+  margin-right:10vw;
   h4{
     margin-top:-4vh;
     font-weight:400;
@@ -93,10 +93,20 @@ html, body{
     .round{
       width:50px;
       height:50px;
-      background:white;
-      border-radius: 50%;
       margin-left:10px;
       margin-right:10px;
+      img{
+        &:hover{
+          animation-name: bounce;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes bounce {
+          0% {margin-top: 0px}
+          50% {margin-top: 10px}
+          100% {margin-top: 0px}
+      }
+      }
     }
   }  
 }
@@ -111,15 +121,13 @@ html, body{
       min-height:50vh;
       border:1.5px solid #4492F7;
       border-radius: 50px;
-      margin: 5vh 5vw 10vh 5vw;
+      margin: 5vh 10vw 10vh 10vw;
       color:#4492F7;
       .section3Icon{
-        min-height:8vw;
         max-height:8vw;
         max-width:8vw;
         margin-top:3vh;
         margin-bottom:15px;
-        background-color:#4492F7;
       }
       .section3Title{
         color:#4492F7;
@@ -137,6 +145,13 @@ html, body{
         background-color:#4492F7;
         border:0px;
         border-radius:25px;
+        span{
+          color:white;
+          margin:0 0 0 10px;
+          text-align: left;
+          font-size: 20px;
+          vertical-align: middle;
+        }
       }
     }
   }
@@ -209,28 +224,38 @@ html, body{
 
   .section5{
     min-height:75vh;
-    margin-top:10vh;
-    .section5Button{
-      margin-top:5vh;
-      margin-bottom:5vh;
-      height:3vw;
-      width:12vw;
-      background-color:#4492F7;
-      border:0px;
-      border-radius:25px;
+    margin-top:15vh;
+    h4{
+      font-size:30px;
     }
     .icons{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-      .round{
-        width:50px;
-        height:50px;
-        background:white;
-        border-radius: 50%;
-        margin-left:10px;
-        margin-right:10px;
+      .contactInfo{
+        .email{
+          margin-bottom:10px;
+          img{
+            transform:scale(0.75);
+          }
+          span{
+            font-size:18px;
+            color:white;
+            margin-left:10px;
+          }
+        }
+        .linkedin{
+          img{
+            transform:scale(0.75);
+          }
+          a{
+            font-size:18px;
+            color:white;     
+            margin-left:10px;
+          }
+        }     
       }
+    }
+    .finalWord{
+      position: relative;
+      top:25vh;
     }  
   }
 
@@ -258,6 +283,18 @@ html, body{
       }
     }
   }
+  .section3{
+    .section3web{
+      .section3Card{
+        img{
+          transform:scale(0.8)
+        }
+          span{
+            font-size: 15px;
+          }
+        }
+      }
+    }
 }
 
 ////////////////////////////IPAD PRO PORTRAIT
@@ -303,12 +340,10 @@ html, body{
         color:#4492F7;
         .slider-mobile{
           .section3Icon{
-            min-height:15vw;
             max-height:15vw;
             max-width:15vw;
             margin-top:5vh;
             margin-bottom:15px;
-            background-color:#4492F7;
           }
           .section3Title{
             color:#4492F7;
@@ -439,6 +474,13 @@ html, body{
         margin: -10vh 5vw 5vh 5vw;
       }
     }
+
+    .section5{
+      .finalWord{
+        position: relative;
+        top:18vh;
+      } 
+    }
 }
 
 ////////////////////////////MOBILE
@@ -474,12 +516,13 @@ html, body{
   .section2{
     margin-top:65vw;
     h1{
-      font-size:30px;
+      font-size:8vw;
+      margin-bottom:1vw;
     }
     h4{
-      margin-top:10px;
+      margin-top:1vw;
       margin-bottom:20px;
-      font-size:18px;
+      font-size:4vw;
     }
   }
 
@@ -504,6 +547,9 @@ html, body{
           .section3Button{
             height:14vw;
             width: 48vw;
+            img{
+              
+            }
           }
           .slick-prev{
             top:30vh;
@@ -555,21 +601,43 @@ html, body{
 
   .section5{
     margin-bottom:10vh;
+    margin-left:10vw;
+    margin-right:10vw;
     h4{
-      font-size:16px;
-      margin-left:5vw;
-      margin-right:5vw;
+      font-size:18px;
+    }
+    p{
+      font-size:14px;
     }
     .section5Button{
         height:14vw;
         width: 48vw;
     }
     .icons{
-      margin-top:5vh;
-      .round{
-        height: 40px;
-        width: 40px;
+      .contactInfo{
+        .email{
+          img{
+            transform:scale(0.5);
+          }
+          span{
+            font-size:15px;
+            margin-left:10px;
+          }
+        }
+        .linkedin{
+          img{
+            transform:scale(0.5);
+          }
+          a{
+            font-size:15px;    
+            margin-left:10px;
+          }
+        }     
       }
+    }
+    .finalWord{
+      position: relative;
+      top:20vh;
     }
   }
 
