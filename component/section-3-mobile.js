@@ -3,6 +3,10 @@ import { Parallax } from 'react-scroll-parallax'
 import Slider from 'react-slick'
 const section3mobile = (props) => {
     const assetPrefix = process.env.ASSET_PREFIX
+    const redirect = (url) => {
+        window.open(url)
+    }
+
     return (
         <Col span={24}>
             <div className="section3mobile">
@@ -14,7 +18,7 @@ const section3mobile = (props) => {
                             speed={500}
                             slidesToShow={1}
                             slidesToScroll={1}
-                            autoplay
+                            // autoplay
                             className="slider-mobile">
                             {props.content.map(content => {
                                 return (
@@ -26,13 +30,12 @@ const section3mobile = (props) => {
                                         <p className="section3Desc">
                                             {content.desc}
                                         </p>
-                                        <a><button className="section3Button">\
-                                        <Row>
-                                                <div>
-                                                    <img src={`${assetPrefix}/assets/${content.buttonLogo}`} style={{ margin: '-20px 0 0 5px' }} />
-                                                    <span style={{ color: 'white', margin: "-50px 0 0 0", textAlign: 'left' }}>{content.buttonText}</span>
-                                                </div>
-                                            </Row></button></a>
+                                        <button className="section3Button" onClick={() => redirect(content.url)}>
+                                            <div className="buttonContent">
+                                                <img src={`${assetPrefix}/assets/${content.buttonLogo}`} />
+                                                <span>{content.buttonText}</span>
+                                            </div>
+                                        </button>
                                     </div>
                                 )
                             })}

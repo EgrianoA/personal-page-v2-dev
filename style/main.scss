@@ -7,7 +7,7 @@ html, body{
 
 
 .homepage {
-    overflow-x:hidden;
+    overflow:hidden;
     font-family: 'Lato', sans-serif;
     background: linear-gradient(180deg, rgba(40,169,241,1) 0%, rgba(21,6,61,1) 100%);
     min-height: 300vh;
@@ -128,6 +128,8 @@ html, body{
         max-width:8vw;
         margin-top:3vh;
         margin-bottom:15px;
+        display: flex;
+        justify-content: center;
       }
       .section3Title{
         color:#4492F7;
@@ -270,10 +272,10 @@ html, body{
 
 @media only screen and (max-width: 1366px){
   .section1{
-    top: 30vh;
+    top: 35vh;
     .scroll{
       p{
-        top:15vh;
+        top:16vh;
       }
       .arrow-1{
         top:20vh;
@@ -327,62 +329,15 @@ html, body{
   }
   .section3{
     .section3web{
-      display:none
-    }
-    .section3mobile{
-      display:block;
       .section3Card{
-        background-color:white;
-        min-height:50vh;
-        border:1.5px solid #4492F7;
+        min-height:30vh;
         border-radius: 50px;
-        margin: 0vh 5vw 0vh 5vw;
-        color:#4492F7;
-        .slider-mobile{
-          .section3Icon{
-            max-height:15vw;
-            max-width:15vw;
-            margin-top:5vh;
-            margin-bottom:15px;
-          }
-          .section3Title{
-            color:#4492F7;
-          }
-          .section3Desc{
-            color:#4492F7;
-            margin-left:10vw;
-            margin-right: 10vw;
-          }
-          .section3Button{
-            margin-top:5vh;
-            margin-bottom:5vh;
-            height:7vw;
-            width:28vw;
-            background-color:#4492F7;
-            border:0px;
-            border-radius:25px;
-          }
-          .slick-prev{
-            left:3vw;
-            top:25vh;
-          }
-          .slick-prev::before{
-            color: #1890ff;
-          }
-          .slick-next{
-            right:3vw;
-            top:25vh;
-          }
-          .slick-next::before{
-            color: #1890ff
-          }
-          .slick-dots{
-            bottom:-50px;
-            li.slick-active button:before{
-              color: #1890ff
-            }
-          }        
-        }      
+        margin: 5vh 5vw 0vh 5vw;
+        .section3Button{
+          height:6vw;
+          width:24vw;
+          border-radius:25px;
+        }
       }
     }
   }
@@ -470,10 +425,85 @@ html, body{
 
     .section3{
       min-height:75vh;
+      .section3web{
+        display:none
+      }
       .section3mobile{
+        display:block;
         margin: -10vh 5vw 5vh 5vw;
+        .section3Card{
+          background-color:white;
+          min-height:50vh;
+          border:1.5px solid #4492F7;
+          border-radius: 50px;
+          margin: 0vh 5vw 0vh 5vw;
+          color:#4492F7;
+          .slider-mobile{
+            .section3Icon{
+              max-height:15vw;
+              max-width:15vw;
+              margin-top:5vh;
+              margin-bottom:15px;
+              display: flex;
+              justify-content: center;
+            }
+            .section3Title{
+              color:#4492F7;
+            }
+            .section3Desc{
+              color:#4492F7;
+              margin-left:10vw;
+              margin-right: 10vw;
+            }
+            .section3Button{
+              margin-top:5vh;
+              margin-bottom:5vh;
+              height:7vw;
+              width:28vw;
+              background-color:#4492F7;
+              border:0px;
+              border-radius:25px;
+              .buttonContent{
+                margin: 0 auto;
+                width: 90%;
+                img{
+                  display: inline-flex;
+                  max-height: 8vw;
+                }
+                span{
+                  vertical-align: middle;
+                  color:white;
+                  font-weight:600;
+                  font-size:20px;
+                  margin-left:3vw;
+                }      
+              }               
+            }
+            .slick-prev{
+              left:3vw;
+              top:25vh;
+            }
+            .slick-prev::before{
+              color: #1890ff;
+            }
+            .slick-next{
+              right:3vw;
+              top:25vh;
+            }
+            .slick-next::before{
+              color: #1890ff
+            }
+            .slick-dots{
+              bottom:0px;
+              li.slick-active button:before{
+                color: #1890ff
+              }
+            }        
+          }      
+        }
       }
     }
+
 
     .section5{
       .finalWord{
@@ -531,7 +561,7 @@ html, body{
       font-size:30px;
     }
     .section3mobile{
-      margin: -5vh 0vw 5vh 0vw;
+      margin: -5vh 0vw 25vh 0vw;
       .section3Card{
         border-radius:20px;
         margin: -100px 5vw 5vh 5vw;
@@ -547,9 +577,9 @@ html, body{
           .section3Button{
             height:14vw;
             width: 48vw;
-            img{
-              
-            }
+            span{
+              font-size:5vw;
+            }           
           }
           .slick-prev{
             top:30vh;
