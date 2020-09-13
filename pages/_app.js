@@ -13,8 +13,8 @@ const _app = props => {
     return (
         <div>
             <Head>
-                <title>EgrianoA's Experiment Page</title>
-                <link rel="icon" href={`${assetPrefix}/assets/think.png`} />
+                <title>EgrianoA's Personal Page</title>
+                <link rel="icon" href={`${assetPrefix}/assets/logo1.png`} />
             </Head>
             <Antd/>
             <ReactSlick/>

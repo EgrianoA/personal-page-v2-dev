@@ -23,26 +23,32 @@ export default function Home() {
   const section3Content = [
     {
       img: "Icon metro-stack.svg",
-      // title: "Fullstack Developer",
-      title: "TEST1",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Software Engineer",
+      // title: "TEST1",
+      desc: `I'm A Software Engineer who focused on developing Web Applications 
+      & Mobile Apps APIs. Using NodeJS for developing the Backend & ReactJs for the Frontend. And I'm also had experiences in
+      developing IoT projects`,
       url: "https://github.com/EgrianoA",
       buttonLogo: "Icon awesome-github.svg",
-      // buttonText: "EgrianoA",
-      buttonText: "TEST1",
+      buttonPreText: 'For my Programming portfolios you can visit my Github.',
+      buttonText: "EgrianoA",
+      // buttonText: "TEST1",
       parallaxConfig: {
         y: [150, -150]
       }
     },
     {
       img: "Group 315.svg",
-      // title: "Designer",
-      title: "TEST2",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Designer",
+      // title: "TEST2",
+      desc: `Some people ask. "How can a programmer can do design?", my answer is just "Why not?".
+       It quite interesting when you can push the potential of logical thinking from the left brain & creative thinking from the right brain.
+       So I like do the designing as part of my hobbies`,
       url: "https://dribbble.com/ArisatouGri",
       buttonLogo: "Icon awesome-dribbble.svg",
-      // buttonText: "ArisatouGri",
-      buttonText: "TEST2",
+      buttonPreText: 'Anyway you can check my design portfolios in my Dribbble.',
+      buttonText: "ArisatouGri",
+      // buttonText: "TEST2",
       parallaxConfig: {
         y: [250, -250]
       }
@@ -51,26 +57,27 @@ export default function Home() {
 
   const section4Content = [
     {
-      year: "2020",
-      title: "LEFT SECTION",
-      desc: "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      url: "",
+      year: "2019",
+      title: "Automated Nutrient Control for Hydroponic",
+      desc: "An automated nutrient control system for NFT hydroponic using Fuzzy Logic. The device used was ESP8266 and Raspberry Pi. Using cloudMQTT for the cloud and ThingSpeak for the dashboard",
+      url: "https://github.com/EgrianoA/Automated-Nutrient-Control-for-Hydroponic",
       img: ""
     },
     {
-      year: "2020",
-      title: "LEFT SECTION 2",
-      desc: "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      url: "",
-      img: ""
+      year: "2019",
+      title: "Greenhouse Monitor System Using MiFlora",
+      desc: "Creating a monitor dashboard for greenhouse using MiFlora as sensing device and ESP32 as microcontroller. This system using cloudMQTT for the cloud and Node-Red for the dashboard",
+      url: "https://github.com/EgrianoA/Greenhouse-Monitor-Using-MiFlora",
+      img: "scheme.jpg"
     },
     {
-      year: "2020",
-      title: "LEFT SECTION 3",
-      desc: "t enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
-      url: "",
-      img: ""
-    },
+      year: "2019",
+      title: "Conceptual Design of Car Parts Marketplace App",
+      desc: "This is a conceptual design of an App to make a special marketplace for car enthusiast to help them to find the car parts they need easier.",
+      url: "https://dribbble.com/shots/7166120-OtoShop-A-Car-Parts-Marketplace-App?utm_source=Clipboard_Shot&utm_campaign=ArisatouGri&utm_content=OtoShop%20-%20A%20Car%20Parts%20Marketplace%20App&utm_medium=Social_Share",
+      img: "mockup-dribbble.jpg"
+    }
+
   ]
 
   const redirect = (url) => {
@@ -107,20 +114,20 @@ export default function Home() {
             <div className="section2">
 
               <h1>
-                {/* <Fade cascade>
-                 I'm Egriano Aristianto
-                </Fade> */}
                 <Fade cascade>
-                  Lorem ipsum dolor sit amet
+                  I'm Egriano Aristianto
                 </Fade>
+                {/* <Fade cascade>
+                  Lorem ipsum dolor sit amet
+                </Fade> */}
               </h1>
               <h4>
-                {/* <Fade cascade>
-                  A Fullstack Developer (+ A Designer)
-              </Fade> */}
                 <Fade cascade>
-                  consectetur adipiscing elit
+                  A Software Engineer (+ A Designer)
               </Fade>
+                {/* <Fade cascade>
+                  consectetur adipiscing elit
+              </Fade> */}
               </h4>
 
               <Row>
@@ -137,10 +144,15 @@ export default function Home() {
                       </a>
                     </div>
                     <div className='round'>
+                      <a onClick={() => redirect("https://www.hackerrank.com/egrianoa?hr_r=1")}>
+                        <img src={`${assetPrefix}/assets/Icon simple-hackerrank.svg`} />
+                      </a>
+                    </div>
+                    <div className='round'>
                       <a onClick={() => redirect("https://dribbble.com/ArisatouGri")}>
                         <img src={`${assetPrefix}/assets/Icon awesome-dribbble.svg`} />
                       </a>
-                    </div>
+                    </div>     
                   </div>
                 </Slide>
               </Row>
@@ -160,7 +172,7 @@ export default function Home() {
           <Row>
             <div className='section4'>
               <center>
-                <h3>SECTION 4</h3>
+                <h3>Some of my works</h3>
                 <Row>
                   <Section4mobile content={section4Content} />
                   <Section4web content={section4Content} />

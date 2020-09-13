@@ -140,7 +140,7 @@ html, body{
         margin-right: 5vw;
       }
       .section3Button{
-        margin-top:5vh;
+        margin-top:2vh;
         margin-bottom:10vh;
         height:3vw;
         width:12vw;
@@ -385,8 +385,6 @@ html, body{
         }
       }
       .imageSection{
-        height: 36vw;
-        width : 64vw;
         max-width: 800px;
         max-height: 600px;
         margin-bottom: 10px;
@@ -456,7 +454,7 @@ html, body{
               margin-right: 10vw;
             }
             .section3Button{
-              margin-top:5vh;
+              margin-top:2vh;
               margin-bottom:5vh;
               height:7vw;
               width:28vw;
@@ -577,9 +575,11 @@ html, body{
           .section3Button{
             height:14vw;
             width: 48vw;
-            span{
-              font-size:5vw;
-            }           
+            .buttonContent{
+              span{
+                font-size:5vw;
+              } 
+            }                     
           }
           .slick-prev{
             top:30vh;
@@ -623,8 +623,8 @@ html, body{
         }
       }
       .imageSection{
-        height: 45vw;
-        width: 90vw;
+        height: 54vw;
+        width: 72vw;
       }
     }
   }

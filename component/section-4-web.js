@@ -1,6 +1,19 @@
 import { Row, Col } from 'antd'
 import Slider from 'react-slick'
 const section4web = (props) => {
+    const assetPrefix = process.env.ASSET_PREFIX
+    const redirect = (url) => {
+        window.open(url)
+    }
+    const imgStyle = (imgUrl) => {
+        return({
+            backgroundImage: `url(${assetPrefix}/assets/${imgUrl})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center center'
+        })
+        
+    }
     return (
         <Slider
             dots={true}
@@ -21,11 +34,11 @@ const section4web = (props) => {
                                     <span>
                                         <p className="desc">
                                             {content.desc}
-                              </p><a>Detail</a></span>
+                              </p><a onClick={() => redirect(content.url)}>Detail</a></span>
                                 </div>
                             </Col>
                             <Col span={12}>
-                                <div className="imageSection" style={{ backgroundColor: 'aquamarine' }} />
+                                <div className="imageSection" style={imgStyle(content.img)} />
                             </Col>
                         </Row>
                     </div>

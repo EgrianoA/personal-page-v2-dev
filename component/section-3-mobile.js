@@ -18,7 +18,7 @@ const section3mobile = (props) => {
                             speed={500}
                             slidesToShow={1}
                             slidesToScroll={1}
-                            // autoplay
+                            autoplay
                             className="slider-mobile">
                             {props.content.map(content => {
                                 return (
@@ -29,6 +29,8 @@ const section3mobile = (props) => {
                                         <h4 className="section3Title">{content.title}</h4>
                                         <p className="section3Desc">
                                             {content.desc}
+                                            <br/><br/>
+                                            {content.buttonPreText}
                                         </p>
                                         <button className="section3Button" onClick={() => redirect(content.url)}>
                                             <div className="buttonContent">
