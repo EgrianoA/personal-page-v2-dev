@@ -68,7 +68,7 @@ export default function Home() {
       title: "Greenhouse Monitor System Using MiFlora",
       desc: "Creating a monitor dashboard for greenhouse using MiFlora as sensing device and ESP32 as microcontroller. This system using cloudMQTT for the cloud and Node-Red for the dashboard",
       url: "https://github.com/EgrianoA/Greenhouse-Monitor-Using-MiFlora",
-      img: "scheme.jpg"
+      img: "Scheme.jpg"
     },
     {
       year: "2019",
